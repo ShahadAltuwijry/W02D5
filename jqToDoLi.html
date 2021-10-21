@@ -12,19 +12,21 @@
 
 <body>
     <div class="wrapper">
-        <h2 style="text-align: left">TO DO List</h2>
         <div class="listInput">
             <input id="tasksIn" placeholder="Write your new task" />
             <button id="addBtn">Add Task</button>
         </div>
-        <div class="innerDiv">
+        <div class="ulDiv">
             <ul id="mainList">
             </ul>
         </div>
-        <p id="counterP" style="color: rgb(200, 228, 251);"></p>
-
-        <button class="wrapperBtns" id="clearList">Clear List</button>
-        <button class="wrapperBtns" id="clearComp">Clear Completed</button>
+        <div class="counterDiv">
+            <p>You have <span id="taskCounter">0</span> Tasks left </p>
+        </div>
+        <div class="clearBtns">
+            <button class="wrapperBtns" id="clearList">Clear List</button>
+            <button class="wrapperBtns" id="clearComp">Clear Completed</button>
+        </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
